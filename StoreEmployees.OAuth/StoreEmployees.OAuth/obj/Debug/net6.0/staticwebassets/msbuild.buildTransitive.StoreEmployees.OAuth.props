@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\StoreEmployees.OAuth.props" />
+</Project>

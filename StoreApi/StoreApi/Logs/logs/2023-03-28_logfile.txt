@@ -1,0 +1,96 @@
+2023-03-28 10:09:07.5625 INFO Fetching All Users
+2023-03-28 10:09:09.0018 INFO Total User responses: 10
+2023-03-28 10:15:52.1085 INFO Fetching All Users
+2023-03-28 10:15:53.4445 INFO Total User responses: 10
+2023-03-28 10:16:04.5629 INFO Fetching All Users
+2023-03-28 10:16:04.6220 INFO Total User responses: 10
+2023-03-28 10:19:09.8865 INFO Fetching All Users
+2023-03-28 10:19:09.9088 INFO Total User responses: 10
+2023-03-28 10:19:58.0331 INFO Fetching All Users
+2023-03-28 10:19:58.0331 INFO Total User responses: 10
+2023-03-28 10:25:48.7065 INFO Fetching All Users
+2023-03-28 10:25:50.0846 INFO Total User responses: 10
+2023-03-28 10:33:12.4681 INFO Fetching All Users
+2023-03-28 10:33:13.9864 INFO Total User responses: 10
+2023-03-28 10:42:14.1167 ERROR Something went wrong: System.InvalidOperationException: IDX20803: Unable to obtain configuration from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.IO.IOException: IDX20804: Unable to retrieve document from: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+ ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7288)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.SendAsyncAndRetryOnNetworkError(HttpClient httpClient, Uri uri)
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.HttpDocumentRetriever.GetDocumentAsync(String address, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfigurationRetriever.GetAsync(String address, IDocumentRetriever retriever, CancellationToken cancel)
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.Protocols.ConfigurationManager`1.GetConfigurationAsync(CancellationToken cancel)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at StoreApi.ExceptionHandlerMiddleware.ExceptionMiddleware.Invoke(HttpContext httpContext) in D:\MyProject\StoreApi\StoreApi\ExceptionHandlerMiddleware\ExceptionMiddleware.cs:line 21
+2023-03-28 10:55:36.8948 INFO Fetching All Users
+2023-03-28 10:55:38.3245 INFO Total User responses: 10
+2023-03-28 10:58:53.3798 INFO Fetching All Users
+2023-03-28 10:58:55.7811 INFO Total User responses: 10
+2023-03-28 11:06:20.4539 INFO Searching category in database
+2023-03-28 11:06:21.7761 INFO Find out category in database
+2023-03-28 11:09:43.8100 INFO Searching the detele user in database
+2023-03-28 11:09:45.0747 INFO Deleting user
+2023-03-28 11:09:45.1632 INFO Delete user success
+2023-03-28 11:14:36.2155 INFO Searching the detele category in database
+2023-03-28 11:14:37.4326 WARN Category is not exist
+2023-03-28 11:17:12.8485 INFO Fetching All Users
+2023-03-28 11:17:14.1841 INFO Total User responses: 10
+2023-03-28 11:19:39.7235 INFO Fetching All Users
+2023-03-28 11:19:41.3437 INFO Total User responses: 10
+2023-03-28 11:20:08.7409 INFO Fetching All Users
+2023-03-28 11:20:08.7818 INFO Total User responses: 10
+2023-03-28 11:26:31.9584 INFO Fetching All Users
+2023-03-28 11:26:31.9763 INFO Total User responses: 10
+2023-03-28 11:34:43.5474 INFO Fetching All Users
+2023-03-28 11:34:45.1033 INFO Total User responses: 10
+2023-03-28 12:32:07.7065 INFO Fetching All Users
+2023-03-28 12:32:09.5155 INFO Total User responses: 10
+2023-03-28 13:00:33.4404 INFO Fetching All Users
+2023-03-28 13:00:34.9195 INFO Total User responses: 10
+2023-03-28 13:01:59.7163 INFO Fetching All Users
+2023-03-28 13:02:02.0472 INFO Total User responses: 10
+2023-03-28 13:03:17.4234 INFO Fetching All Users
+2023-03-28 13:03:19.5100 INFO Total User responses: 10
+2023-03-28 16:56:19.9952 INFO Fetching All Users
+2023-03-28 16:56:21.3810 INFO Total User responses: 1
+2023-03-28 17:26:32.5214 INFO Fetching All Users
+2023-03-28 17:26:34.8323 INFO Total User responses: 1
+2023-03-28 17:27:13.1275 INFO Fetching All Users
+2023-03-28 17:27:14.5479 INFO Total User responses: 1
+2023-03-28 17:30:26.5566 INFO Fetching All Users
+2023-03-28 17:30:26.6094 INFO Total User responses: 1
+2023-03-28 17:36:12.7925 INFO Fetching All Users
+2023-03-28 17:36:15.0763 INFO Total User responses: 10
+2023-03-28 17:47:35.3317 INFO Fetching All Users
+2023-03-28 17:47:37.6178 INFO Total User responses: 1
+2023-03-28 17:54:13.7831 INFO Fetching All Users
+2023-03-28 17:54:15.0533 INFO Total User responses: 1
+2023-03-28 17:55:32.8042 INFO Fetching All Users
+2023-03-28 17:55:32.8524 INFO Total User responses: 1
+2023-03-28 17:56:30.8767 INFO Fetching All Users
+2023-03-28 17:56:30.8767 INFO Total User responses: 1
+2023-03-28 17:58:09.9207 INFO Fetching All Users
+2023-03-28 17:58:11.3229 INFO Total User responses: 1
